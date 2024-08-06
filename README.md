@@ -197,7 +197,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
 - Open Heidi SQL
 - Create a new session, root/Password1
-- Connect to the session
+- In Heidi SQL, right click <b>Unamed</b> > <b>Create New</b> > <b>New database</b>
 - Create a database called “<b>osTicket</b>”
 </p>
 <p>
@@ -205,6 +205,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 <img src="https://i.imgur.com/DmbTnp8.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/5uwkfAq.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -215,9 +218,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   - MySQL Password: <b>Password1</b>
   - Click: <b>Install Now</b>
 </p>
+<p>
+<img src="https://i.imgur.com/z9i9v5B.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
 
 <p>
-  
 - Browser to the help desk login page: http://localhost/osTicket/scp/login.php
 - End Users osTicket URL: http://localhost/osTicket/ 
 </p>
