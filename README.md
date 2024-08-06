@@ -133,7 +133,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Within <b>C:\inetpub\wwwroot</b> folder, rename “<b>upload</b>” to “<b>osTicket</b>”.
 </p>
 <p>
-<img src="https://i.imgur.com/tg7IK7v.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dgRN2Vm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 
