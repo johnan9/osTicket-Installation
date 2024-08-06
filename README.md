@@ -133,7 +133,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Within <b>C:\inetpub\wwwroot</b> folder, rename “<b>upload</b>” to “<b>osTicket</b>”.
 </p>
 <p>
-<img src="https://i.imgur.com/dgRN2Vm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/If7l8Pf.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 
@@ -149,11 +149,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 <p>
-<img src="https://i.imgur.com/NTatdUm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/a1pe9JF.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/qyJveLE.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/27T7fGO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -161,7 +161,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
   - From C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
   - To C:\inetpub\wwwroot\osTicket\include\ost-config.php
-
+</p>
+<p>
+<img src="https://i.imgur.com/gO7LITH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -170,11 +172,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   - <b>Disable inheritance</b> - remove all
   - New permission - everyone - all
 </p>
+<p>
+<img src="https://i.imgur.com/v6nsXHP.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/kPEoygG.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
 
 <p>
 <b>14.) Continue to setup screen on osTicket browser</b>
-  
+ 
+  - Go to IIS > site > default > osTicket > <b>browse *:80 (http)</b>
   - Add helpdesk name, default email, first and last name, username, and password
+</p>
+<p>
+<img src="https://i.imgur.com/uta9nHz.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/vmMKNA2.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -184,6 +199,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Create a new session, root/Password1
 - Connect to the session
 - Create a database called “<b>osTicket</b>”
+</p>
+<p>
+<img src="https://i.imgur.com/SL3f7Ma.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DmbTnp8.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
