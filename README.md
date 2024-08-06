@@ -42,8 +42,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Enter into the virtual machine with Remote Desktop Connection using the public IP address (<b>20.118.218.35</b>) of VM-osTicket
 </p>
 
+
+
 <p>
-<img src="https://i.imgur.com/Clzj7Xs.png" height="80%" width="80%" alt="Logo"/>
+<img scr="" height="80%" width="80%" alt="Logo"/>
 </p>
 <br />
 
