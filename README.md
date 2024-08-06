@@ -42,83 +42,122 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Enter into the virtual machine with Remote Desktop Connection using the public IP address (<b>20.118.218.35</b>) of VM-osTicket
 </p>
 
-
-
 <p>
-<img scr="" height="80%" width="80%" alt="Logo"/>
+<img src="https://i.imgur.com/qiFSgFs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <p>
-2.) Install / Enable IIS in Windows Features with the following:
+<b>2.) Install / Enable IIS under Programs > Windows Features with the following:</b>
 
-- Web Management Tools > IIS Management Console
 - World Wide Web Services >
   - Application Development Features > CGI
-  - Common HTTP Features
+  - Common HTTP Features > All
+<img src="https://i.imgur.com/6czKMBe.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CrORIAy.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
 </p>
 
 <p>
-3.) Download/Install PHP Manager for IIS
+<b>3.) Download/Install PHP Manager for IIS</b>
+</p>
+<p>
+  <img src="https://i.imgur.com/mvlgOtB.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-4.) Download/Install Rewrite Module
+<b>4.) Download/Install Rewrite Module</b>
+</p>
+<p>
+<img src="https://i.imgur.com/1sypVUw.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-5.) Create the directory C:\PHP
+<b>5.) Create the directory C:\PHP</b>
+</p>
+<p>
+<img src="https://i.imgur.com/tlVC0Jz.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-6.) PHP 7.3.8 → unzip the content to C:\PHP
+<b>6.) PHP 7.3.8 → unzip the content to C:\PHP</b>
+</p>
+<p>
+<img src="https://i.imgur.com/okaAxm8.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-7.) Download/Install VC_redist.x86.exe
+<b>7.) Download/Install VC_redist.x86.exe</b>
+</p>
+<p>
+<img src="https://i.imgur.com/cFVN55H.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-8.) Download/Install MySQL 5.5.62 with following configuration:
+<b>8.) Download/Install MySQL 5.5.62 with following configuration:</b>
 
 - Typical Setup ->
 - Launch configuration Wizard ->
 - Standard Configuration ->
 - Install As Windows Service
-- password: <b>Password1</b>
+- root password: <b>Password1</b>
+</p>
+<p>
+<img src="https://i.imgur.com/dmmfDp5.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Fc93wox.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-9.) Open IIS as an Admin
+<b>9.) Open IIS as an Admin</b>
   
 - Register PHP within IIS
-  - Register new PHP version with path C:\PHP\php-cgi.exe
+  - Register new PHP version with path <b>C:\PHP\php-cgi.exe</b>
 - Restart IIS
-
+</p>
+<p>
+<img src="https://i.imgur.com/sHNxe80.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/NFeXWgQ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/ZQbPKcA.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-10.) Install osTicket v1.15.8
+<b>10.) Install osTicket v1.15.8</b>
   
-- Extract and copy “upload” folder to C:\inetpub\wwwroot
-- Within C:\inetpub\wwwroot folder, rename “upload” to “osTicket”.
-
+- Extract and copy “<b>upload</b>” folder to <b>C:\inetpub\wwwroot</b>
+- Within <b>C:\inetpub\wwwroot</b> folder, rename “<b>upload</b>” to “<b>osTicket</b>”.
+</p>
+<p>
+<img src="https://i.imgur.com/tg7IK7v.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 
+
 <p>
-11.) Restart IIS
+<b>11.) Restart IIS</b>
   
   - Go back to IIS, sites > Default > osTicket
-  - Go to PHP Manager and click “Enable or disable an extension”
-    - Enable: php_imap.dll
-    - Enable: php_intl.dll
-    - Enable: php_opcache.dll
-  - Go to “Browse *:80” and changes are reflected to the site.
-
+  - Go to PHP Manager and click “<b>Enable or disable an extension</b>”
+    - Enable: <b>php_imap.dll</b>
+    - Enable: <b>php_intl.dll</b>
+    - Enable: <b>php_opcache.dll</b>
+  - Go to “<b>Browse *:80</b>” and changes are reflected to the site.
 </p>
 
 <p>
-12.) Rename ost-config.php
+<img src="https://i.imgur.com/NTatdUm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/qyJveLE.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+<b>12.) Rename ost-config.php</b>
   
   - From C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
   - To C:\inetpub\wwwroot\osTicket\include\ost-config.php
@@ -126,34 +165,34 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 <p>
-13.) Assign permission for ost-config.php
+<b>13.) Assign permission for ost-config.php</b>
   
-  - Disable inheritance - remove all
+  - <b>Disable inheritance</b> - remove all
   - New permission - everyone - all
 </p>
 
 <p>
-14.) Continue to setup screen on osTicket browser
+<b>14.) Continue to setup screen on osTicket browser</b>
   
   - Add helpdesk name, default email, first and last name, username, and password
 </p>
 
 <p>
-15.) Download/Install HeidiSQL
+<b>15.) Download/Install HeidiSQL</b>
   
 - Open Heidi SQL
 - Create a new session, root/Password1
 - Connect to the session
-- Create a database called “osTicket”
+- Create a database called “<b>osTicket</b>”
 </p>
 
 <p>
-16.) Continue Setting up osTicket in the browser
+<b>16.) Continue Setting up osTicket in the browser</b>
   
-  - MySQL Database: osTicket
-  - MySQL Username: root
-  - MySQL Password: Password1
-  - Click “Install Now”
+  - MySQL Database: <b>osTicket</b>
+  - MySQL Username: <b>root</b>
+  - MySQL Password: <b>Password1</b>
+  - Click: <b>Install Now</b>
 </p>
 
 <p>
@@ -163,10 +202,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 <p>
-17.) Clean up
+<b>17.) Clean up</b>
   
   - Delete C:\inetpub\wwwroot\osTicket\setup
-  - Set Permission to “Read” only:
+  - Set Permission to “<b>Read</b>” only:
   - C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 
