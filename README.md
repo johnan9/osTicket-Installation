@@ -223,24 +223,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 <p>
-- Browser to the help desk login page: http://localhost/osTicket/scp/login.php
-- End Users osTicket URL: http://localhost/osTicket/ 
-</p>
-
-<p>
 <b>17.) Clean up</b>
   
   - Delete C:\inetpub\wwwroot\osTicket\setup
-  - Set Permission to “<b>Read</b>” only:
-  - C:\inetpub\wwwroot\osTicket\include\ost-config.php
+  - In <b>C:\inetpub\wwwroot\osTicket\include\ost-config.php</b>
+  -   For <b>Everyone</b>, set permission to “<b>Read and Read/Execute</b>” only
 </p>
 <p>
 <img src="https://i.imgur.com/3tvjYTd.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
-
-
 <p>
-Full configured osTicket
+<img src="https://i.imgur.com/d0mcFZM.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+
+<h2>Full configured osTicket</h2>
+<p>
   
 - Help desk login page: http://localhost/osTicket/scp/login.php
 </p>
